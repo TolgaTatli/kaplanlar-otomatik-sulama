@@ -6,6 +6,7 @@ const Button = ({
   backgroundColor,
   borderColor,
   textColor,
+  fullWidth,
 }) => {
   return (
     <button
@@ -16,7 +17,8 @@ const Button = ({
     ${backgroundColor ? backgroundColor : "bg-coral-red"}
     ${textColor ? textColor : "text-white"}
     ${borderColor ? borderColor : "border-none"}
-    rounded-full`}
+    ${fullWidth && "w-full"} 
+    rounded-full `}
     >
       {label}
       {iconURL && (
@@ -31,3 +33,7 @@ const Button = ({
 };
 
 export default Button;
+
+
+//     ${fullWidth && "w-full"} 
+// fullWidth true ise w-full yap değilse boş bırak
