@@ -1,37 +1,52 @@
-import React from "react";
-import { reviews } from "../constants";
-import ReviewCard from "../components/ReviewCard";
+import React, { useState } from "react";
 
-const CustomerReviews = () => {
+const AccordionItem = ({ title, children, isOpen, onToggle }) => {
   return (
-    <section className="max-container">
-      <h3 className="font-palanquin text-center text-4xl font-bold">
-        What Our
-        <span className="text-coral-red"> Customers </span>
-        Say?
-      </h3>
-      <p className="info-text m-auto mt-4 text-center max-w-lg">
-        Hear genuine stories straight from the hearts of our customers. Discover
-        firsthand what sets us apart as we share the unfiltered experiences and
-        voices of those who have chosen our products and services.
-      </p>
-      <div
-        className="mt-24 flex flex-1 justify-evenly
-      items-center 
-      max-lg:flex-col gap-14"
+    <div className="border-b border-gray-700">
+      <button
+        onClick={onToggle}
+        className="w-full flex justify-between items-center py-4 px-6 text-left font-semibold text-gray-200 hover:bg-gray-800 transition-colors"
       >
-        {reviews.map((review) => (
-          <ReviewCard
-            key={review.customerName}
-            imgURL={review.imgURL}
-            customerName={review.customerName}
-            rating={review.rating}
-            feedback={review.feedback}
-          />
-        ))}
-      </div>
-    </section>
+        <span>{title}</span>
+        <span
+          className={`transform transition-transform duration-300 ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
+        >
+          ▼
+        </span>
+      </button>
+      {isOpen && <div className="px-6 pb-4 text-gray-300">{children}</div>}
+    </div>
   );
 };
 
-export default CustomerReviews;
+const Accordion = ({ items }) => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <>
+      <div className="text-center text-2xl font-bold text-black mb-6">
+        SIKÇA SORULAN SORULAR
+      </div>
+      <div className="max-w-full mx-auto bg-blue-800 rounded-md shadow-md ">
+        {items.map((item, i) => (
+          <AccordionItem
+            key={i}
+            title={item.title}
+            isOpen={openIndex === i}
+            onToggle={() => handleToggle(i)}
+          >
+            {item.content}
+          </AccordionItem>
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default Accordion;

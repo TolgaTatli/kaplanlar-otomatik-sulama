@@ -1,11 +1,11 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
+import { facebook, instagram, shieldTick, support, truckFast, twitter, whatsapp } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "#home", label: "Ana Sayfa" },
+  { href: "#about-us", label: "Hakkımızda" },
+  { href: "#services", label: "Hizmetlerimiz" },
+  { href: "#contact-us", label: "İletişim" },
 ];
 
 export const shoes = [
@@ -24,9 +24,8 @@ export const shoes = [
 ];
 
 export const statistics = [
-  { value: '1k+', label: 'Brands' },
-  { value: '500+', label: 'Shops' },
-  { value: '250k+', label: 'Customers' },
+  { value: 'Ankara', label: 'Konum' },
+  { value: 'Otomatik', label: 'Sulama Sistemleri' },
 ];
 
 export const products = [
@@ -54,21 +53,22 @@ export const products = [
 
 export const services = [
   {
-    imgURL: truckFast,
-    label: "Free shipping",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service."
+    imgURL: whatsapp,
+    label: "Ücretsiz Keşif",
+    subtext: "Otomatik sulama sistemleri için ücretsiz keşif hizmeti sunuyoruz."
   },
   {
     imgURL: shieldTick,
-    label: "Secure Payment",
-    subtext: "Experience worry-free transactions with our secure payment options."
+    label: "Aynı Gün Teknik Servis",
+    subtext: "Ankara içi aynı gün tamir, bakım ve teknik servis hizmeti sunuyoruz."
   },
   {
     imgURL: support,
-    label: "Love to help you",
-    subtext: "Our dedicated team is here to assist you every step of the way."
+    label: "Hizmet Garantisi",
+    subtext: "Kurulum sonrası destekle her zaman yanınızdayız."
   },
 ];
+
 
 export const reviews = [
   {
