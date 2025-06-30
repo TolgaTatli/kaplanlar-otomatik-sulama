@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
+import WhatsAppButton from "../components/WhatsAppButton";
+
 
 const Subscribe = () => {
   return (
@@ -18,7 +20,7 @@ const Subscribe = () => {
           Sipariş vermek, bilgi almak veya destek için hemen bize ulaşın.
         </p>
 
-        <Button label="Whatsapp destek hattı." fullWidth />
+        <WhatsAppButton label="Whatsapp destek hattı." fullWidth />
 
         <p className="text-sm text-slate-500 italic">
           Ortalama yanıt süresi: 5-15 dakika
