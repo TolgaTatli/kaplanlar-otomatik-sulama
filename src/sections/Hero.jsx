@@ -11,7 +11,7 @@ import {
 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
-import WhatsAppButton from "../components/WhatsappButton";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Hero = () => {
   return (
@@ -31,16 +31,11 @@ const Hero = () => {
           <span className="text-coral-red inline-block mt-3">Otomatik</span>
           Sulama Hizmetleri
         </h1>
-        <p className="text-slate-gray text-lg leading-8 mt-6 mb-4 sm:max-w-sm">
+        <p className="text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Su israfını önleyen, yalnızca ihtiyaç duyulan yeşil alanları hedef
           alan otomatik çim sulama sistemlerimizle, verimli ve sürdürülebilir
           bir sulama deneyimi sunuyoruz.
         </p>
-        <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded mb-10">
-          <p className="text-green-900 font-semibold">
-            Mühendislik hesaplamaları ile projelendirilmiş sistemlerimizde, sulama performansı ve su tasarrufu garantisi sunuyoruz.
-          </p>
-        </div>
         <WhatsAppButton label="Bizimle iletişime geçin" iconURL={arrowRight} />
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat, index) => (

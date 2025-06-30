@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { sulama_placeholder4 } from "../assets/images";
-import WhatsAppButton from "../components/WhatsappButton";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const SuperQuality = () => {
   const handleScrollToServices = () => {
