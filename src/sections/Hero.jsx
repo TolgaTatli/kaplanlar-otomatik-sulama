@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-w-[1440px] mx-auto px-4 xl:px-12"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-[130px] max-w-[1440px] mx-auto px-4 xl:px-[65px]"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full pt-28">
         <p className="text-xl font-montserrat text-coral-red">
@@ -55,11 +55,9 @@ const Hero = () => {
           alt="sulama sistemi"
           width={700}
           height={740}
-          className="object-contain relative rounded-2xl   z-1 border border-2 border-coral-red"
+          className="object-contain relative rounded-2xl z-1 border-2 border-coral-red"
         />
       </div>
-
-      <hr className="lg:hidden h-0.5 bg-gradient-to-r from-coral-red to-black border-0" />
     </section>
   );
 };

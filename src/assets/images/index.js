@@ -28,11 +28,17 @@ import thumbnailShoe1 from './thumbnail-shoe1.svg'
 import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
 
+import KaplanlarCollage1 from './KaplanlarSulamaCollage1.png'
+import KaplanlarCollage2 from './KaplanlarSulamaCollage2.png'
+
 export {
     kaplanSulama,
     bigShoe1,
     bigShoe2,
     bigShoe3,
+
+    KaplanlarCollage1,
+    KaplanlarCollage2,
 
     customer1,
     customer2,

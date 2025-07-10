@@ -1,5 +1,5 @@
 import React from "react";
-import { offer } from "../assets/images";
+import { KaplanlarCollage1, offer } from "../assets/images";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 
@@ -8,6 +8,7 @@ const SpecialOffer = ({
   description,
   descriptionSub,
   descriptionEnd,
+  image,
 }) => {
   return (
     <section
@@ -19,7 +20,7 @@ const SpecialOffer = ({
     >
       <div className="flex-1">
         <img
-          src={offer}
+          src={image}
           alt="offer"
           width={773}
           height={687}

@@ -3,8 +3,8 @@ import PopularProducts from './PopularProducts'
 import SuperQuality from './SuperQuality'
 import Services from './Services'
 import SpecialOffer from './SpecialOffer'
-import CustomerReviews from './CustomerReviews'
-import Subscribe from './Subscribe'
+import CustomerReviews from './FAQSection'
+import Subscribe from './ContactWhatsapp'
 import Footer from './Footer'
 
 
