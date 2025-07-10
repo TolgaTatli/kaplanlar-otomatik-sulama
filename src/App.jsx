@@ -1,17 +1,16 @@
 import {
   Hero,
-  PopularProducts,
   SuperQuality,
   Services,
   SpecialOffer,
-  CustomerReviews,
   Subscribe,
   Footer,
 } from "./sections";
 import Nav from "./components/Nav";
-import ModernFAQ from "./sections/FAQSection";
-import Accordion from "./sections/FAQSection";
 import { KaplanlarCollage1, KaplanlarCollage2 } from "./assets/images";
+import FAQSection from "./sections/FAQSection";
+import WhatsappHelp from "./sections/WhatsappHelp";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const data = [
   {
@@ -66,17 +65,18 @@ const App = () => (
       className="padding-x
   sm:py-32 py-16 w-full"
     >
-      <Subscribe />
+      <WhatsappHelp />
     </section>
     <hr className="h-0.5 bg-gradient-to-r from-coral-red to-black border-0 mx-auto w-11/12" />
 
     <section className="bg-pale-blue">
-      {/* <ModernFAQ items={data} /> */}
-      <Accordion />
+      <FAQSection />
     </section>
     <section className="bg-gradient-to-b from-red-950 to-black padding-x ">
       <Footer />
     </section>
+
+    <ScrollToTopButton />
   </main>
 );
 

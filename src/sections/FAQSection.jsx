@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Accordion = () => {
+const FAQSection = () => {
   return (
     <section className="relative z-20 overflow-hidden bg-white pb-32 pt-20 lg:pb-[120px] lg:pt-[120px]">
       <div className="container mx-auto px-4">
@@ -87,7 +87,7 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default FAQSection;
 
 const AccordionItem = ({ header, text }) => {
   const [active, setActive] = useState(false);
