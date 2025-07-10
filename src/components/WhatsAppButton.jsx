@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatsAppButton = ({
-  phone = "+905333883406",
+  phone = "+905317921674",
   message = "Merhaba, otomatik sulama hizmeti hakkında bilgi almak istiyorum",
   label,
   iconURL,
