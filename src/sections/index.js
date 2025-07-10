@@ -4,8 +4,9 @@ import SuperQuality from './SuperQuality'
 import Services from './Services'
 import SpecialOffer from './SpecialOffer'
 import CustomerReviews from './FAQSection'
-import Subscribe from './ContactWhatsapp'
 import Footer from './Footer'
+import FAQSection from "./FAQSection";
+import WhatsappHelp from "./WhatsappHelp";
 
 
 export {
@@ -15,6 +16,7 @@ export {
   Services,
   SpecialOffer,
   CustomerReviews,
-  Subscribe,
   Footer,
+  FAQSection,
+  WhatsappHelp
 }

@@ -21,7 +21,7 @@ const SpecialOffer = ({
       <div className="flex-1">
         <img
           src={image}
-          alt="offer"
+          alt="Kaplanlar Sulama Hizmetleri - Otomatik Sulama"
           width={773}
           height={687}
           className="object-contain w-full"

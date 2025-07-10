@@ -3,13 +3,12 @@ import {
   SuperQuality,
   Services,
   SpecialOffer,
-  Subscribe,
   Footer,
+  FAQSection,
+  WhatsappHelp, 
 } from "./sections";
 import Nav from "./components/Nav";
 import { KaplanlarCollage1, KaplanlarCollage2 } from "./assets/images";
-import FAQSection from "./sections/FAQSection";
-import WhatsappHelp from "./sections/WhatsappHelp";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const data = [
