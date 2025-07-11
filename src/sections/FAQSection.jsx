@@ -23,12 +23,12 @@ const FAQSection = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2 space-y-6">
             <AccordionItem
-              header="Sulama sistemim çalışmıyor. Sadece bir bölge sulanıyor."
+              header="Sulama sistemim çalışmıyor. Sadece bir bölge sulanıyor veya su hiç durmuyor."
               text="Bölgesel arızalar genellikle selenoid vana ya da kablolama problemlerinden kaynaklanır. Tespit ve onarım için bizimle iletişime geçin."
             />
             <AccordionItem
-              header="Çimlerim sararıyor, bazı yerler yeşil kalıyor."
-              text="Sprinkler başlıklarınız tıkanmış veya su basıncı dengesiz olabilir. Ekiplerimiz sorunu kısa sürede çözer."
+              header="Çimlerim sararıyor, bazı yerler kuru kalıyor."
+              text="Sprink başlıklarınız tıkanmış veya su basıncı dengesiz olabilir. Ekiplerimiz sorunu kısa sürede çözer."
             />
             <AccordionItem
               header="Bahçemden sürekli su çıkıyor, toprağım çok ıslak."
