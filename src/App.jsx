@@ -10,6 +10,7 @@ import {
 import Nav from "./components/Nav";
 import { KaplanlarCollage1, KaplanlarCollage2 } from "./assets/images";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => (
   <main className="relative">
@@ -58,6 +59,7 @@ const App = () => (
     </section>
 
     <ScrollToTopButton />
+    <Analytics/>
   </main>
 );
 
