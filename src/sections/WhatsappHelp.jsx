@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { arrowRight } from "../assets/icons";
 

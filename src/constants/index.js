@@ -1,4 +1,4 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter, whatsapp } from "../assets/icons";
+import { facebook, instagram, shieldTick, support, twitter, whatsapp } from "../assets/icons";
 
 export const navLinks = [
   { href: "#home", label: "Ana Sayfa" },
