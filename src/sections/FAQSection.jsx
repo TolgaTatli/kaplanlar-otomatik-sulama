@@ -114,7 +114,7 @@ const AccordionItem = ({ header, text }) => {
         aria-expanded={active}
       >
         <div
-          className={`mr-5 flex h-10 w-10 items-center justify-center rounded-lg bg-red-100 text-red-600
+          className={`mr-5 flex h-10 w-10 items-center justify-center rounded-lg md:bg-red-100 text-red-600 bg-none
           transition-transform duration-300 ease-in-out
           ${active ? "rotate-180" : ""}
           `}
@@ -140,7 +140,7 @@ const AccordionItem = ({ header, text }) => {
           ${active ? "max-h-[500px]" : "max-h-0 overflow-hidden"}
         `}
       >
-        <p>{text}</p>
+        <p className="font-montserrat">{text}</p>
       </div>
     </div>
   );

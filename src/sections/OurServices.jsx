@@ -1,9 +1,6 @@
 import React from "react";
-import { KaplanlarCollage1, offer } from "../assets/images";
-import Button from "../components/Button";
-import { arrowRight } from "../assets/icons";
 
-const SpecialOffer = ({
+const OurServices = ({
   name,
   description,
   descriptionSub,
@@ -46,4 +43,4 @@ const SpecialOffer = ({
   );
 };
 
-export default SpecialOffer;
+export default OurServices;

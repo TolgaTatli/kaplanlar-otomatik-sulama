@@ -1,22 +1,18 @@
 import Hero from './Hero'
-import PopularProducts from './PopularProducts'
-import SuperQuality from './SuperQuality'
+import AboutUs from './AboutUs'
 import Services from './Services'
-import SpecialOffer from './SpecialOffer'
-import CustomerReviews from './FAQSection'
+import OurServices from './OurServices'
+import FAQSection from './FAQSection'
 import Footer from './Footer'
-import FAQSection from "./FAQSection";
 import WhatsappHelp from "./WhatsappHelp";
 
 
 export {
   Hero,
-  PopularProducts,
-  SuperQuality,
+  AboutUs,
   Services,
-  SpecialOffer,
-  CustomerReviews,
-  Footer,
+  OurServices,
   FAQSection,
+  Footer,
   WhatsappHelp
 }

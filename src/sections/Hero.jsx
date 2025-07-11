@@ -1,16 +1,6 @@
-import React from "react";
-import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
-import { shoes, statistics } from "../constants";
-import {
-  kaplanSulama,
-  sulama_placeholder4,
-  sulama_placeholder1,
-  sulama_placeholder2,
-  sulama_placeholder3,
-} from "../assets/images";
-import ShoeCard from "../components/ShoeCard";
-import { useState } from "react";
+import { statistics } from "../constants";
+import { sulama_placeholder3 } from "../assets/images";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 const Hero = () => {

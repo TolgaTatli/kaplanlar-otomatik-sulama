@@ -1,34 +1,16 @@
 import {
   Hero,
-  SuperQuality,
   Services,
-  SpecialOffer,
+  AboutUs,
   Footer,
   FAQSection,
-  WhatsappHelp, 
+  WhatsappHelp,
+  OurServices, 
 } from "./sections";
 import Nav from "./components/Nav";
 import { KaplanlarCollage1, KaplanlarCollage2 } from "./assets/images";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
-const data = [
-  {
-    title:
-      "Sulama sistemi çalışmıyor. Bir bölge çalışıyor, diğer bölge çalışmıyor.",
-    content:
-      "Çalışmayan bölgede su basıncı yeterli olmayabilir. Su kaçağı olabilir. Veya daha farklı bir problem ile karşı karşıya olabilirsiniz. Hızlı ve profesyonel desteğimiz ile bir günde ankara içinde destek almak için bizimle iletişime geçin.",
-  },
-  {
-    title: "Çimlerim sarardı, kuru alan kalıyor?",
-    content:
-      "Sprink ve rotorlarınız bozulmuş veya ayarsız olabilir. daha fazlası için bizimle işetişime geçiniz",
-  },
-  {
-    title: "bahçemden su kaynıyor, bahçeden su çıkıyor",
-    content:
-      "mevcut sulamanızda veya borularınızda patlak olabilir detay için bizi arayınız.",
-  },
-];
 const App = () => (
   <main className="relative">
     <Nav />
@@ -37,13 +19,13 @@ const App = () => (
     </section>
     <hr className="h-0.5 bg-gradient-to-r from-coral-red to-black border-0 mx-auto w-11/12" />
     <section className="padding">
-      <SuperQuality />
+      <AboutUs />
     </section>
     <section className="padding-x py-10">
       <Services />
     </section>
     <section className="padding">
-      <SpecialOffer
+      <OurServices
         image={KaplanlarCollage1}
         name="Çim"
         description="Otomatik çim sulama sistemleri, yeşil alanlarınızı düzenli ve verimli şekilde sulamanızı sağlar"
@@ -52,7 +34,7 @@ const App = () => (
       />
     </section>
     <section className="padding">
-      <SpecialOffer
+      <OurServices
       image={KaplanlarCollage2}
         name="Damlama"
         description="Otomatik damlama sulama sistemleri, bitkilerin kök bölgelerine doğrudan ve kontrollü su ulaştırmanızı sağlayan sistemlerdir."

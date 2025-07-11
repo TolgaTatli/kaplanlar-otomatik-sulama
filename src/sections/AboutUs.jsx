@@ -4,7 +4,7 @@ import { arrowRight } from "../assets/icons";
 import { sulama_placeholder4 } from "../assets/images";
 import WhatsAppButton from "../components/WhatsAppButton";
 
-const SuperQuality = () => {
+const AboutUs = () => {
   const handleScrollToServices = () => {
     const servicesSection = document.getElementById("contact-us");
     if (servicesSection) {
@@ -80,4 +80,4 @@ const SuperQuality = () => {
   );
 };
 
-export default SuperQuality;
+export default AboutUs;
