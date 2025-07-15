@@ -5,13 +5,14 @@ import {
   Footer,
   FAQSection,
   WhatsappHelp,
-  OurServices, 
+  OurServices,
 } from "./sections";
 import Nav from "./components/Nav";
 import { KaplanlarCollage1, KaplanlarCollage2 } from "./assets/images";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import { Analytics } from "@vercel/analytics/react";
 import { Helmet } from "react-helmet"; // Helmet importunu ekle
+import CallButton from "./components/CallButton";
 
 const App = () => (
   <main className="relative">
@@ -65,9 +66,9 @@ const App = () => (
     <section className="bg-gradient-to-b from-red-950 to-black padding-x ">
       <Footer />
     </section>
-
+    <CallButton />
     <ScrollToTopButton />
-    <Analytics/>
+    <Analytics />
   </main>
 );
 

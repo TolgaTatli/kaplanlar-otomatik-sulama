@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { ArrowUpCircle } from "lucide-react"; // veya başka bir ikon
+import { useEffect, useState } from "react";
+import { ArrowUpCircle } from "lucide-react";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +24,14 @@ const ScrollToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 bg-coral-red text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition duration-300 hover:animate-bounce animate-bounce"
+        className="
+          fixed
+          sm:bottom-6 sm:right-6
+          bottom-4 right-2
+          z-50 bg-coral-red text-white p-4 rounded-full shadow-lg
+          hover:bg-gray-800 transition duration-300
+          hover:animate-bounce animate-bounce
+        "
         aria-label="Yukarı dön"
       >
         <ArrowUpCircle className="w-6 h-6" />
