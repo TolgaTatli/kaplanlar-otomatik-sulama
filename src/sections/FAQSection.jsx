@@ -132,7 +132,7 @@ const AccordionItem = ({ header, text }) => {
           </svg>
         </div>
 
-        <h4 className="text-lg font-semibold text-black">{header}</h4>
+        <h3 className="text-lg font-semibold text-black">{header}</h3>
       </button>
 
       <div

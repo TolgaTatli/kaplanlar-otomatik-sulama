@@ -18,6 +18,7 @@ const OurServices = ({
       <div className="flex-1">
         <img
           src={image}
+          loading="lazy"
           alt="Kaplanlar Sulama Hizmetleri - Otomatik Sulama"
           width={773}
           height={687}

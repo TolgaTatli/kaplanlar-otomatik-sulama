@@ -1,8 +1,7 @@
-import React from "react";
-import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { sulama_placeholder4 } from "../assets/images";
 import WhatsAppButton from "../components/WhatsAppButton";
+
 
 const AboutUs = () => {
   const handleScrollToServices = () => {
@@ -71,6 +70,7 @@ const AboutUs = () => {
         <img
           src={sulama_placeholder4}
           alt="sulama"
+          loading="lazy"
           width={570}
           height={522}
           className="object-contain border-2 border-solid border-coral-red rounded-lg shadow-lg"

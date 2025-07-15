@@ -11,9 +11,17 @@ import Nav from "./components/Nav";
 import { KaplanlarCollage1, KaplanlarCollage2 } from "./assets/images";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import { Analytics } from "@vercel/analytics/react";
+import { Helmet } from "react-helmet"; // Helmet importunu ekle
 
 const App = () => (
   <main className="relative">
+    <Helmet>
+      <title>Kaplanlar Sulama | Ankara Otomatik Sulama Sistemleri</title>
+      <meta
+        name="description"
+        content="Kaplanlar Sulama, Ankara ve çevresinde otomatik çim ve bahçe sulama sistemleri, damlama sulama, teknik servis ve ücretsiz keşif hizmetleri sunar. Sürdürülebilir ve ekonomik çözümler."
+      />
+    </Helmet>
     <Nav />
     <section className="xl:padding-1 wide:padding-r padding-b">
       <Hero />
@@ -36,7 +44,7 @@ const App = () => (
     </section>
     <section className="padding">
       <OurServices
-      image={KaplanlarCollage2}
+        image={KaplanlarCollage2}
         name="Damlama"
         description="Otomatik damlama sulama sistemleri, bitkilerin kök bölgelerine doğrudan ve kontrollü su ulaştırmanızı sağlayan sistemlerdir."
         descriptionSub="Damlama boruları, filtreler, basınç regülatörleri ve zamanlayıcılarla çalışan bu sistem, suyu israf etmeden verimli sulama sunar ve bitkilerin sağlıklı büyümesini destekler."

@@ -27,22 +27,23 @@ const Hero = () => {
           bir sulama deneyimi sunuyoruz.
         </p>
         <WhatsAppButton label="Bizimle iletişime geçin" iconURL={arrowRight} />
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+        <ul className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat, index) => (
-            <div key={index}>
+            <li key={index}>
               <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {stat.label}
               </p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
 
       <div className="relative flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 hidden lg:flex">
         <img
           src={sulama_placeholder3}
           alt="sulama sistemi"
+          fetchpriority="high"
           width={700}
           height={740}
           className="object-contain relative rounded-2xl z-1 border-2 border-coral-red"
