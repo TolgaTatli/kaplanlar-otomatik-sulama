@@ -34,7 +34,7 @@ const Footer = () => {
             </span>
             <span className="text-slate-200 font-montserrat">
               <strong>E-posta:</strong>{" "}
-              <a href="mailto:info@kaplanlarsulama.com" className="hover:text-coral-red transition">info@kaplanlarsulama.com</a>
+              <a href="mailto:kaplanlarsulama@gmail.com" className="hover:text-coral-red transition">kaplanlarsulama@gmail.com</a>
             </span>
             <span className="text-slate-200 font-montserrat">
               <strong>Adres:</strong> Ankara, Türkiye
